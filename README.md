@@ -1,2 +1,2 @@
-# algorithmic-trading-pyspark
-Algorithmic trading project using Pyspark
+# Algorithmic Trading
+Algorithmic trading project using Pyspark and sentiment analysis
