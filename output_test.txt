@@ -1,0 +1,630 @@
+F:\Classes\BD\Final_Project\SentimentAnalysisKafka>%SPARK_HOME%\bin\spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.1.0 processStream.py
+Ivy Default Cache set to: C:\Users\Satish\.ivy2\cache
+The jars for the packages stored in: C:\Users\Satish\.ivy2\jars
+:: loading settings :: url = jar:file:/C:/spark-2.1.0-bin-hadoop2.4/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+org.apache.spark#spark-streaming-kafka-0-8_2.11 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent;1.0
+        confs: [default]
+        found org.apache.spark#spark-streaming-kafka-0-8_2.11;2.1.0 in central
+        found org.apache.kafka#kafka_2.11;0.8.2.1 in central
+        found org.scala-lang.modules#scala-xml_2.11;1.0.2 in central
+        found com.yammer.metrics#metrics-core;2.2.0 in central
+        found org.slf4j#slf4j-api;1.7.16 in local-m2-cache
+        found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 in central
+        found com.101tec#zkclient;0.3 in central
+        found log4j#log4j;1.2.17 in local-m2-cache
+        found org.apache.kafka#kafka-clients;0.8.2.1 in central
+        found net.jpountz.lz4#lz4;1.3.0 in local-m2-cache
+        found org.xerial.snappy#snappy-java;1.1.2.6 in local-m2-cache
+        found org.apache.spark#spark-tags_2.11;2.1.0 in central
+        found org.scalatest#scalatest_2.11;2.2.6 in central
+        found org.scala-lang#scala-reflect;2.11.8 in central
+        found org.spark-project.spark#unused;1.0.0 in local-m2-cache
+:: resolution report :: resolve 3076ms :: artifacts dl 26ms
+        :: modules in use:
+        com.101tec#zkclient;0.3 from central in [default]
+        com.yammer.metrics#metrics-core;2.2.0 from central in [default]
+        log4j#log4j;1.2.17 from local-m2-cache in [default]
+        net.jpountz.lz4#lz4;1.3.0 from local-m2-cache in [default]
+        org.apache.kafka#kafka-clients;0.8.2.1 from central in [default]
+        org.apache.kafka#kafka_2.11;0.8.2.1 from central in [default]
+        org.apache.spark#spark-streaming-kafka-0-8_2.11;2.1.0 from central in [default]
+        org.apache.spark#spark-tags_2.11;2.1.0 from central in [default]
+        org.scala-lang#scala-reflect;2.11.8 from central in [default]
+        org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 from central in [default]
+        org.scala-lang.modules#scala-xml_2.11;1.0.2 from central in [default]
+        org.scalatest#scalatest_2.11;2.2.6 from central in [default]
+        org.slf4j#slf4j-api;1.7.16 from local-m2-cache in [default]
+        org.spark-project.spark#unused;1.0.0 from local-m2-cache in [default]
+        org.xerial.snappy#snappy-java;1.1.2.6 from local-m2-cache in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   15  |   2   |   2   |   0   ||   15  |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent
+        confs: [default]
+        0 artifacts copied, 15 already retrieved (0kB/21ms)
+Traceback (most recent call last):
+  File "F:/Classes/BD/Final_Project/SentimentAnalysisKafka/processStream.py", line 6, in <module>
+    import nltk
+ImportError: No module named nltk
+
+F:\Classes\BD\Final_Project\SentimentAnalysisKafka>%SPARK_HOME%\bin\spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.1.0 processStream.py
+Ivy Default Cache set to: C:\Users\Satish\.ivy2\cache
+The jars for the packages stored in: C:\Users\Satish\.ivy2\jars
+:: loading settings :: url = jar:file:/C:/spark-2.1.0-bin-hadoop2.4/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+org.apache.spark#spark-streaming-kafka-0-8_2.11 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent;1.0
+        confs: [default]
+        found org.apache.spark#spark-streaming-kafka-0-8_2.11;2.1.0 in central
+        found org.apache.kafka#kafka_2.11;0.8.2.1 in central
+        found org.scala-lang.modules#scala-xml_2.11;1.0.2 in central
+        found com.yammer.metrics#metrics-core;2.2.0 in central
+        found org.slf4j#slf4j-api;1.7.16 in local-m2-cache
+        found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 in central
+        found com.101tec#zkclient;0.3 in central
+        found log4j#log4j;1.2.17 in local-m2-cache
+        found org.apache.kafka#kafka-clients;0.8.2.1 in central
+        found net.jpountz.lz4#lz4;1.3.0 in local-m2-cache
+        found org.xerial.snappy#snappy-java;1.1.2.6 in local-m2-cache
+        found org.apache.spark#spark-tags_2.11;2.1.0 in central
+        found org.scalatest#scalatest_2.11;2.2.6 in central
+        found org.scala-lang#scala-reflect;2.11.8 in central
+        found org.spark-project.spark#unused;1.0.0 in local-m2-cache
+:: resolution report :: resolve 3010ms :: artifacts dl 24ms
+        :: modules in use:
+        com.101tec#zkclient;0.3 from central in [default]
+        com.yammer.metrics#metrics-core;2.2.0 from central in [default]
+        log4j#log4j;1.2.17 from local-m2-cache in [default]
+        net.jpountz.lz4#lz4;1.3.0 from local-m2-cache in [default]
+        org.apache.kafka#kafka-clients;0.8.2.1 from central in [default]
+        org.apache.kafka#kafka_2.11;0.8.2.1 from central in [default]
+        org.apache.spark#spark-streaming-kafka-0-8_2.11;2.1.0 from central in [default]
+        org.apache.spark#spark-tags_2.11;2.1.0 from central in [default]
+        org.scala-lang#scala-reflect;2.11.8 from central in [default]
+        org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 from central in [default]
+        org.scala-lang.modules#scala-xml_2.11;1.0.2 from central in [default]
+        org.scalatest#scalatest_2.11;2.2.6 from central in [default]
+        org.slf4j#slf4j-api;1.7.16 from local-m2-cache in [default]
+        org.spark-project.spark#unused;1.0.0 from local-m2-cache in [default]
+        org.xerial.snappy#snappy-java;1.1.2.6 from local-m2-cache in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   15  |   2   |   2   |   0   ||   15  |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent
+        confs: [default]
+        0 artifacts copied, 15 already retrieved (0kB/23ms)
+  File "F:/Classes/BD/Final_Project/SentimentAnalysisKafka/processStream.py", line 6
+    !pip install nltk
+    ^
+SyntaxError: invalid syntax
+
+F:\Classes\BD\Final_Project\SentimentAnalysisKafka>pip install nltk
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop
+support for Python 2.7.
+Collecting nltk
+  Downloading https://files.pythonhosted.org/packages/73/56/90178929712ce427ebad179f8dc46c8deef4e89d4c853092bee1efd57d05/nltk-3.4.1.zip (3.1MB)
+     |UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU| 3.1MB 2.1MB/s
+Requirement already satisfied: six in c:\python27\lib\site-packages (from nltk) (1.10.0)
+Collecting singledispatch (from nltk)
+  Downloading https://files.pythonhosted.org/packages/c5/10/369f50bcd4621b263927b0a1519987a04383d4a98fb10438042ad410cf88/singledispatch-3.4.0.3-py2.py3-none-any.whl
+Building wheels for collected packages: nltk
+  Building wheel for nltk (setup.py) ... done
+  Stored in directory: C:\Users\Satish\AppData\Local\pip\Cache\wheels\97\8a\10\d646015f33c525688e91986c4544c68019b19a473cb33d3b55
+Successfully built nltk
+Installing collected packages: singledispatch, nltk
+Successfully installed nltk-3.4.1 singledispatch-3.4.0.3
+WARNING: You are using pip version 19.1, however version 19.1.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+F:\Classes\BD\Final_Project\SentimentAnalysisKafka>%SPARK_HOME%\bin\spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.1.0 processStream.py
+Ivy Default Cache set to: C:\Users\Satish\.ivy2\cache
+The jars for the packages stored in: C:\Users\Satish\.ivy2\jars
+:: loading settings :: url = jar:file:/C:/spark-2.1.0-bin-hadoop2.4/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+org.apache.spark#spark-streaming-kafka-0-8_2.11 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent;1.0
+        confs: [default]
+        found org.apache.spark#spark-streaming-kafka-0-8_2.11;2.1.0 in central
+        found org.apache.kafka#kafka_2.11;0.8.2.1 in central
+        found org.scala-lang.modules#scala-xml_2.11;1.0.2 in central
+        found com.yammer.metrics#metrics-core;2.2.0 in central
+        found org.slf4j#slf4j-api;1.7.16 in local-m2-cache
+        found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 in central
+        found com.101tec#zkclient;0.3 in central
+        found log4j#log4j;1.2.17 in local-m2-cache
+        found org.apache.kafka#kafka-clients;0.8.2.1 in central
+        found net.jpountz.lz4#lz4;1.3.0 in local-m2-cache
+        found org.xerial.snappy#snappy-java;1.1.2.6 in local-m2-cache
+        found org.apache.spark#spark-tags_2.11;2.1.0 in central
+        found org.scalatest#scalatest_2.11;2.2.6 in central
+        found org.scala-lang#scala-reflect;2.11.8 in central
+        found org.spark-project.spark#unused;1.0.0 in local-m2-cache
+:: resolution report :: resolve 3090ms :: artifacts dl 23ms
+        :: modules in use:
+        com.101tec#zkclient;0.3 from central in [default]
+        com.yammer.metrics#metrics-core;2.2.0 from central in [default]
+        log4j#log4j;1.2.17 from local-m2-cache in [default]
+        net.jpountz.lz4#lz4;1.3.0 from local-m2-cache in [default]
+        org.apache.kafka#kafka-clients;0.8.2.1 from central in [default]
+        org.apache.kafka#kafka_2.11;0.8.2.1 from central in [default]
+        org.apache.spark#spark-streaming-kafka-0-8_2.11;2.1.0 from central in [default]
+        org.apache.spark#spark-tags_2.11;2.1.0 from central in [default]
+        org.scala-lang#scala-reflect;2.11.8 from central in [default]
+        org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 from central in [default]
+        org.scala-lang.modules#scala-xml_2.11;1.0.2 from central in [default]
+        org.scalatest#scalatest_2.11;2.2.6 from central in [default]
+        org.slf4j#slf4j-api;1.7.16 from local-m2-cache in [default]
+        org.spark-project.spark#unused;1.0.0 from local-m2-cache in [default]
+        org.xerial.snappy#snappy-java;1.1.2.6 from local-m2-cache in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   15  |   2   |   2   |   0   ||   15  |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent
+        confs: [default]
+        0 artifacts copied, 15 already retrieved (0kB/16ms)
+[nltk_data] Downloading package vader_lexicon to
+[nltk_data]     C:\Users\Satish\AppData\Roaming\nltk_data...
+[nltk_data]   Package vader_lexicon is already up-to-date!
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+19/05/06 21:26:51 INFO SparkContext: Running Spark version 2.1.0
+19/05/06 21:26:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/05/06 21:26:51 INFO SecurityManager: Changing view acls to: Satish
+19/05/06 21:26:51 INFO SecurityManager: Changing modify acls to: Satish
+19/05/06 21:26:51 INFO SecurityManager: Changing view acls groups to:
+19/05/06 21:26:51 INFO SecurityManager: Changing modify acls groups to:
+19/05/06 21:26:51 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Satish); groups with view permissions: Set(); users  wi
+th modify permissions: Set(Satish); groups with modify permissions: Set()
+19/05/06 21:26:52 INFO Utils: Successfully started service 'sparkDriver' on port 61663.
+19/05/06 21:26:52 INFO SparkEnv: Registering MapOutputTracker
+19/05/06 21:26:52 INFO SparkEnv: Registering BlockManagerMaster
+19/05/06 21:26:52 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/05/06 21:26:52 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/05/06 21:26:52 INFO DiskBlockManager: Created local directory at C:\Users\Satish\AppData\Local\Temp\blockmgr-6e26d32f-9636-485d-80c7-41783df399ac
+19/05/06 21:26:52 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+19/05/06 21:26:52 INFO SparkEnv: Registering OutputCommitCoordinator
+19/05/06 21:26:53 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+19/05/06 21:26:53 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://169.254.46.248:4040
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.1.0.jar at spark://169.254.46.248:61663/jars/org.apache.spa
+rk_spark-streaming-kafka-0-8_2.11-2.1.0.jar with timestamp 1557192413233
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar at spark://169.254.46.248:61663/jars/org.apache.kafka_kafka_2.11-0.8.
+2.1.jar with timestamp 1557192413235
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.apache.spark_spark-tags_2.11-2.1.0.jar at spark://169.254.46.248:61663/jars/org.apache.spark_spark-tags_2
+.11-2.1.0.jar with timestamp 1557192413235
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar at spark://169.254.46.248:61663/jars/org.spark-project.spark_unused-
+1.0.0.jar with timestamp 1557192413235
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar at spark://169.254.46.248:61663/jars/org.scala-lang.modules_s
+cala-xml_2.11-1.0.2.jar with timestamp 1557192413235
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/com.yammer.metrics_metrics-core-2.2.0.jar at spark://169.254.46.248:61663/jars/com.yammer.metrics_metrics-cor
+e-2.2.0.jar with timestamp 1557192413236
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.2.jar at spark://169.254.46.248:61663/jars/org.scala
+-lang.modules_scala-parser-combinators_2.11-1.0.2.jar with timestamp 1557192413236
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/com.101tec_zkclient-0.3.jar at spark://169.254.46.248:61663/jars/com.101tec_zkclient-0.3.jar with timestamp 1
+557192413236
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar at spark://169.254.46.248:61663/jars/org.apache.kafka_kafka-client
+s-0.8.2.1.jar with timestamp 1557192413236
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar at spark://169.254.46.248:61663/jars/org.slf4j_slf4j-api-1.7.16.jar with times
+tamp 1557192413236
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/log4j_log4j-1.2.17.jar at spark://169.254.46.248:61663/jars/log4j_log4j-1.2.17.jar with timestamp 15571924132
+37
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/net.jpountz.lz4_lz4-1.3.0.jar at spark://169.254.46.248:61663/jars/net.jpountz.lz4_lz4-1.3.0.jar with timesta
+mp 1557192413237
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar at spark://169.254.46.248:61663/jars/org.xerial.snappy_snappy-java-
+1.1.2.6.jar with timestamp 1557192413237
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.scalatest_scalatest_2.11-2.2.6.jar at spark://169.254.46.248:61663/jars/org.scalatest_scalatest_2.11-2.2.
+6.jar with timestamp 1557192413237
+19/05/06 21:26:53 INFO SparkContext: Added JAR file:/C:/Users/Satish/.ivy2/jars/org.scala-lang_scala-reflect-2.11.8.jar at spark://169.254.46.248:61663/jars/org.scala-lang_scala-reflect-2.1
+1.8.jar with timestamp 1557192413237
+19/05/06 21:26:53 INFO SparkContext: Added file file:/F:/Classes/BD/Final_Project/SentimentAnalysisKafka/processStream.py at file:/F:/Classes/BD/Final_Project/SentimentAnalysisKafka/process
+Stream.py with timestamp 1557192413344
+19/05/06 21:26:53 INFO Utils: Copying F:\Classes\BD\Final_Project\SentimentAnalysisKafka\processStream.py to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\us
+erFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\processStream.py
+19/05/06 21:26:53 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.1.0.jar at file:/C:/Users/Satish/.ivy2/jars/org.apache.spa
+rk_spark-streaming-kafka-0-8_2.11-2.1.0.jar with timestamp 1557192413763
+19/05/06 21:26:53 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.apache.spark_spark-streaming-kafka-0-8_2.11-2.1.0.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f
+2-a208062bb979\userFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.apache.spark_spark-streaming-kafka-0-8_2.11-2.1.0.jar
+19/05/06 21:26:54 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar at file:/C:/Users/Satish/.ivy2/jars/org.apache.kafka_kafka_2.11-0.8.
+2.1.jar with timestamp 1557192414101
+19/05/06 21:26:54 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.apache.kafka_kafka_2.11-0.8.2.1.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\use
+rFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.apache.kafka_kafka_2.11-0.8.2.1.jar
+19/05/06 21:26:54 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.apache.spark_spark-tags_2.11-2.1.0.jar at file:/C:/Users/Satish/.ivy2/jars/org.apache.spark_spark-tags_2
+.11-2.1.0.jar with timestamp 1557192414390
+19/05/06 21:26:54 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.apache.spark_spark-tags_2.11-2.1.0.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\
+userFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.apache.spark_spark-tags_2.11-2.1.0.jar
+19/05/06 21:26:54 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar at file:/C:/Users/Satish/.ivy2/jars/org.spark-project.spark_unused-
+1.0.0.jar with timestamp 1557192414727
+19/05/06 21:26:54 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.spark-project.spark_unused-1.0.0.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\us
+erFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.spark-project.spark_unused-1.0.0.jar
+19/05/06 21:26:55 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar at file:/C:/Users/Satish/.ivy2/jars/org.scala-lang.modules_s
+cala-xml_2.11-1.0.2.jar with timestamp 1557192415137
+19/05/06 21:26:55 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.scala-lang.modules_scala-xml_2.11-1.0.2.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062b
+b979\userFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.scala-lang.modules_scala-xml_2.11-1.0.2.jar
+19/05/06 21:26:55 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/com.yammer.metrics_metrics-core-2.2.0.jar at file:/C:/Users/Satish/.ivy2/jars/com.yammer.metrics_metrics-cor
+e-2.2.0.jar with timestamp 1557192415349
+19/05/06 21:26:55 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\com.yammer.metrics_metrics-core-2.2.0.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\u
+serFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\com.yammer.metrics_metrics-core-2.2.0.jar
+19/05/06 21:26:55 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.2.jar at file:/C:/Users/Satish/.ivy2/jars/org.scala
+-lang.modules_scala-parser-combinators_2.11-1.0.2.jar with timestamp 1557192415695
+19/05/06 21:26:55 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.scala-lang.modules_scala-parser-combinators_2.11-1.0.2.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-421
+1-91f2-a208062bb979\userFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.scala-lang.modules_scala-parser-combinators_2.11-1.0.2.jar
+19/05/06 21:26:55 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/com.101tec_zkclient-0.3.jar at file:/C:/Users/Satish/.ivy2/jars/com.101tec_zkclient-0.3.jar with timestamp 1
+557192415856
+19/05/06 21:26:55 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\com.101tec_zkclient-0.3.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\userFiles-a4a25
+7a0-0b5d-4e57-878e-7f9fb4bc0a91\com.101tec_zkclient-0.3.jar
+19/05/06 21:26:56 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar at file:/C:/Users/Satish/.ivy2/jars/org.apache.kafka_kafka-client
+s-0.8.2.1.jar with timestamp 1557192416227
+19/05/06 21:26:56 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.apache.kafka_kafka-clients-0.8.2.1.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\
+userFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.apache.kafka_kafka-clients-0.8.2.1.jar
+19/05/06 21:26:56 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar at file:/C:/Users/Satish/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar with times
+tamp 1557192416434
+19/05/06 21:26:56 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.slf4j_slf4j-api-1.7.16.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\userFiles-a4
+a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.slf4j_slf4j-api-1.7.16.jar
+19/05/06 21:26:56 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/log4j_log4j-1.2.17.jar at file:/C:/Users/Satish/.ivy2/jars/log4j_log4j-1.2.17.jar with timestamp 15571924166
+33
+19/05/06 21:26:56 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\log4j_log4j-1.2.17.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\userFiles-a4a257a0-0
+b5d-4e57-878e-7f9fb4bc0a91\log4j_log4j-1.2.17.jar
+19/05/06 21:26:56 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/net.jpountz.lz4_lz4-1.3.0.jar at file:/C:/Users/Satish/.ivy2/jars/net.jpountz.lz4_lz4-1.3.0.jar with timesta
+mp 1557192416848
+19/05/06 21:26:56 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\net.jpountz.lz4_lz4-1.3.0.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\userFiles-a4a
+257a0-0b5d-4e57-878e-7f9fb4bc0a91\net.jpountz.lz4_lz4-1.3.0.jar
+19/05/06 21:26:57 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar at file:/C:/Users/Satish/.ivy2/jars/org.xerial.snappy_snappy-java-
+1.1.2.6.jar with timestamp 1557192417046
+19/05/06 21:26:57 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.xerial.snappy_snappy-java-1.1.2.6.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\u
+serFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.xerial.snappy_snappy-java-1.1.2.6.jar
+19/05/06 21:26:57 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.scalatest_scalatest_2.11-2.2.6.jar at file:/C:/Users/Satish/.ivy2/jars/org.scalatest_scalatest_2.11-2.2.
+6.jar with timestamp 1557192417235
+19/05/06 21:26:57 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.scalatest_scalatest_2.11-2.2.6.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\user
+Files-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.scalatest_scalatest_2.11-2.2.6.jar
+19/05/06 21:26:57 INFO SparkContext: Added file file:/C:/Users/Satish/.ivy2/jars/org.scala-lang_scala-reflect-2.11.8.jar at file:/C:/Users/Satish/.ivy2/jars/org.scala-lang_scala-reflect-2.1
+1.8.jar with timestamp 1557192417457
+19/05/06 21:26:57 INFO Utils: Copying C:\Users\Satish\.ivy2\jars\org.scala-lang_scala-reflect-2.11.8.jar to C:\Users\Satish\AppData\Local\Temp\spark-aaf6038c-1719-4211-91f2-a208062bb979\use
+rFiles-a4a257a0-0b5d-4e57-878e-7f9fb4bc0a91\org.scala-lang_scala-reflect-2.11.8.jar
+19/05/06 21:26:57 INFO Executor: Starting executor ID driver on host localhost
+19/05/06 21:26:57 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 61684.
+19/05/06 21:26:57 INFO NettyBlockTransferService: Server created on 169.254.46.248:61684
+19/05/06 21:26:57 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/05/06 21:26:57 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 169.254.46.248, 61684, None)
+19/05/06 21:26:57 INFO BlockManagerMasterEndpoint: Registering block manager 169.254.46.248:61684 with 366.3 MB RAM, BlockManagerId(driver, 169.254.46.248, 61684, None)
+19/05/06 21:26:57 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 169.254.46.248, 61684, None)
+19/05/06 21:26:57 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 169.254.46.248, 61684, None)
+-------------------------------------------
+Time: 2019-05-06 21:27:00
+-------------------------------------------
+
+-------------------------------------------
+Time: 2019-05-06 21:27:10
+-------------------------------------------
+('American Express', '2019-04-20T02:14:11Z', 0.3291)
+('American Express', '2019-04-17T13:35:10Z', 0.1109)
+('American Express', '2019-04-17T09:00:00Z', 0.9712)
+('American Express', '2019-04-25T17:23:53Z', 0.7644)
+('American Express', '2019-05-02T15:17:37Z', 0.7745)
+('American Express', '2019-04-28T07:00:00Z', 0.6697)
+('American Express', '2019-04-08T16:13:26Z', 0.3818)
+('American Express', '2019-04-29T18:40:00Z', -0.6613)
+('American Express', '2019-04-09T16:41:41Z', 0.9952)
+('American Express', '2019-04-30T16:40:52Z', 0.9001)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:27:20
+-------------------------------------------
+('Apple', '2019-04-18T15:55:00Z', 0.6705)
+('Apple', '2019-04-25T13:00:00Z', 0.5245)
+('Apple', '2019-04-06T11:26:00Z', -0.4215)
+('Apple', '2019-04-17T16:01:03Z', 0.886)
+('Apple', '2019-04-16T19:26:45Z', -0.802)
+('Apple', '2019-05-06T22:32:00Z', 0.8625)
+('Apple', '2019-04-24T19:30:00Z', 0.8022)
+('Apple', '2019-04-23T13:49:13Z', 0.0)
+('Apple', '2019-04-09T19:38:00Z', 0.2263)
+('Apple', '2019-04-28T19:58:00Z', 0.7783)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:27:30
+-------------------------------------------
+('Boeing', '2019-04-08T23:26:31Z', 0.1779)
+('Boeing', '2019-04-27T00:31:56Z', -0.4019)
+('Boeing', '2019-04-24T11:45:51Z', 0.8934)
+('Boeing', '2019-04-16T19:33:00Z', -0.875)
+('Boeing', '2019-04-14T15:09:36Z', 0.0)
+('Boeing', '2019-04-15T11:47:00Z', 0.3182)
+('Boeing', '2019-04-17T17:00:00Z', 0.8176)
+('Boeing', '2019-04-24T12:10:31Z', 0.0)
+('Boeing', '2019-04-29T11:49:39Z', -0.6808)
+('Boeing', '2019-04-30T21:23:11Z', -0.5784)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:27:40
+-------------------------------------------
+('Caterpillar', '2019-04-24T12:15:00Z', 0.6597)
+('Caterpillar', '2019-04-24T12:07:08Z', 0.0772)
+('Caterpillar', '2019-05-06T20:26:01Z', -0.8074)
+('Caterpillar', '2019-04-25T13:46:00Z', -0.5719)
+('Caterpillar', '2019-04-22T13:37:06Z', -0.6908)
+('Caterpillar', '2019-04-18T22:07:12Z', 0.8269)
+('Caterpillar', '2019-04-12T20:53:00Z', 0.8402)
+('Caterpillar', '2019-04-23T15:17:00Z', -0.5859)
+('Caterpillar', '2019-04-11T15:25:59Z', 0.6808)
+('Caterpillar', '2019-04-24T15:56:34Z', 0.7939)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:27:50
+-------------------------------------------
+('Cisco', '2019-04-12T16:54:46Z', 0.9468)
+('Cisco', '2019-04-14T16:34:00Z', 0.8641)
+('Cisco', '2019-04-08T13:00:00Z', 0.9246)
+('Cisco', '2019-04-27T13:00:00Z', 0.7425)
+('Cisco', '2019-04-09T16:00:45Z', -0.9246)
+('Cisco', '2019-04-09T12:40:12Z', 0.8316)
+('Cisco', '2019-04-30T00:00:17Z', 0.2023)
+('Cisco', '2019-05-02T18:11:39Z', 0.8654)
+('Cisco', '2019-04-25T16:34:57Z', 0.1531)
+('Cisco', '2019-05-02T10:22:00Z', 0.0)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:28:00
+-------------------------------------------
+('Coca-Cola', '2019-04-12T19:00:00Z', 0.9906)
+('Coca-Cola', '2019-04-13T16:15:50Z', 0.0)
+('Coca-Cola', '2019-04-23T16:21:00Z', 0.8481)
+('Coca-Cola', '2019-04-15T16:29:00Z', 0.7096)
+('Coca-Cola', '2019-05-02T15:19:00Z', 0.3939)
+('Coca-Cola', '2019-04-22T10:00:09Z', 0.7149)
+('Coca-Cola', '2019-04-22T10:00:09Z', 0.7149)
+('Coca-Cola', '2019-05-06T17:09:29Z', 0.4215)
+('Coca-Cola', '2019-05-02T17:16:16Z', 0.8402)
+('Coca-Cola', '2019-05-01T11:30:51Z', -0.802)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:28:10
+-------------------------------------------
+('DowDuPont', '2019-04-22T18:12:00Z', 0.5719)
+('DowDuPont', '2019-05-03T23:48:00Z', 0.8442)
+('DowDuPont', '2019-04-22T18:20:00Z', 0.5719)
+('DowDuPont', '2019-04-22T18:02:00Z', 0.5719)
+('DowDuPont', '2019-04-22T18:24:00Z', -0.0258)
+('DowDuPont', '2019-04-15T06:00:00Z', -0.1779)
+('DowDuPont', '2019-04-22T17:55:00Z', -0.2263)
+('DowDuPont', '2019-05-03T07:30:02Z', 0.7003)
+('DowDuPont', '2019-04-18T11:52:00Z', -0.91)
+('DowDuPont', '2019-05-03T16:00:46Z', 0.296)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:28:20
+-------------------------------------------
+('ExxonMobil', '2019-04-26T13:44:04Z', 0.0)
+('ExxonMobil', '2019-04-08T16:30:00Z', 0.296)
+('ExxonMobil', '2019-04-17T15:40:00Z', 0.25)
+('ExxonMobil', '2019-04-21T13:18:00Z', -0.6369)
+('ExxonMobil', '2019-04-30T00:03:00Z', 0.6808)
+('ExxonMobil', '2019-04-22T12:30:00Z', 0.6705)
+('ExxonMobil', '2019-04-21T01:24:00Z', 0.8885)
+('ExxonMobil', '2019-04-12T17:32:15Z', 0.0)
+('ExxonMobil', '2019-05-05T13:07:00Z', 0.775)
+('ExxonMobil', '2019-05-05T13:17:00Z', -0.5643)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:28:30
+-------------------------------------------
+('General Electric', '2019-04-30T10:44:46Z', 0.7003)
+('General Electric', '2019-04-30T11:51:00Z', -0.1689)
+('General Electric', '2019-04-09T23:42:19Z', 0.9922)
+('General Electric', '2019-04-10T10:53:04Z', 0.0)
+('General Electric', '2019-04-12T16:49:34Z', 0.7096)
+('General Electric', '2019-04-24T22:26:00Z', 0.4731)
+('General Electric', '2019-04-30T11:40:00Z', 0.836)
+('General Electric', '2019-04-13T15:33:59Z', 0.9037)
+('General Electric', '2019-04-16T20:32:52Z', 0.0)
+('General Electric', '2019-04-16T22:00:27Z', 0.4215)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:28:40
+-------------------------------------------
+('The Home Depot', '2019-04-10T12:05:33Z', 0.7783)
+('The Home Depot', '2019-05-06T17:30:00Z', 0.0)
+('The Home Depot', '2019-04-24T15:58:59Z', 0.5267)
+('The Home Depot', '2019-05-01T16:30:00Z', 0.0)
+('The Home Depot', '2019-04-11T16:36:56Z', 0.9686)
+('The Home Depot', '2019-04-13T12:00:37Z', 0.9467)
+('The Home Depot', '2019-05-05T10:42:21Z', 0.5404)
+('The Home Depot', '2019-04-24T23:43:46Z', 0.0)
+('The Home Depot', '2019-04-18T11:22:34Z', 0.9908)
+('The Home Depot', '2019-05-01T10:05:36Z', 0.9409)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:28:50
+-------------------------------------------
+('IBM', '2019-05-04T14:33:34Z', 0.0)
+('IBM', '2019-04-29T09:00:38Z', 0.9485)
+('IBM', '2019-04-23T15:27:43Z', 0.8481)
+('IBM', '2019-04-09T14:43:26Z', -0.9118)
+('IBM', '2019-04-11T10:20:00Z', 0.8064)
+('IBM', '2019-04-22T13:53:00Z', 0.7717)
+('IBM', '2019-05-03T14:49:00Z', 0.9442)
+('IBM', '2019-05-06T21:25:00Z', -0.9081)
+('IBM', '2019-04-08T12:55:13Z', 0.8271)
+('IBM', '2019-05-01T00:47:23Z', 0.34)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:29:00
+-------------------------------------------
+('Intel', '2019-04-27T00:25:00Z', 0.6124)
+('Intel', '2019-04-23T13:00:00Z', 0.3818)
+('Intel', '2019-04-16T14:30:00Z', 0.6428)
+('Intel', '2019-04-16T16:03:27Z', 0.34)
+('Intel', '2019-04-23T13:00:00Z', 0.6486)
+('Intel', '2019-04-16T16:00:00Z', 0.9201)
+('Intel', '2019-04-26T15:56:11Z', -0.6889)
+('Intel', '2019-04-23T13:00:00Z', 0.8176)
+('Intel', '2019-04-11T16:50:36Z', 0.6369)
+('Intel', '2019-04-16T19:26:45Z', -0.802)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:29:10
+-------------------------------------------
+('JPMorgan Chase', '2019-04-29T23:37:52Z', 0.0)
+('JPMorgan Chase', '2019-04-29T14:53:39Z', -0.8625)
+('JPMorgan Chase', '2019-04-29T19:09:28Z', 0.765)
+('JPMorgan Chase', '2019-04-29T21:00:58Z', 0.0772)
+('JPMorgan Chase', '2019-05-03T12:26:25Z', 0.886)
+('JPMorgan Chase', '2019-04-09T13:46:00Z', 0.8689)
+('JPMorgan Chase', '2019-04-29T22:31:13Z', -0.4019)
+('JPMorgan Chase', '2019-04-19T15:42:00Z', 0.0951)
+('JPMorgan Chase', '2019-04-17T14:56:07Z', 0.8807)
+('JPMorgan Chase', '2019-04-10T23:45:41Z', -0.5499)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:29:20
+-------------------------------------------
+("McDonald's", '2019-05-01T21:10:42Z', -0.5267)
+("McDonald's", '2019-04-29T15:33:00Z', 0.25)
+("McDonald's", '2019-04-08T11:36:13Z', 0.9451)
+("McDonald's", '2019-04-18T19:55:56Z', -0.2263)
+("McDonald's", '2019-05-03T20:02:00Z', 0.9319)
+("McDonald's", '2019-04-26T14:36:00Z', 0.5859)
+("McDonald's", '2019-05-02T12:42:00Z', -0.34)
+("McDonald's", '2019-04-20T19:48:00Z', 0.6124)
+("McDonald's", '2019-04-20T14:23:00Z', 0.6597)
+("McDonald's", '2019-04-15T16:24:00Z', 0.6249)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:29:30
+-------------------------------------------
+('Microsoft', '2019-05-05T11:00:00Z', 0.5859)
+('Microsoft', '2019-05-06T15:30:19Z', 0.1531)
+('Microsoft', '2019-04-23T08:25:31Z', -0.4215)
+('Microsoft', '2019-04-10T16:22:04Z', 0.6597)
+('Microsoft', '2019-05-06T15:35:48Z', 0.296)
+('Microsoft', '2019-04-13T14:43:02Z', -0.5574)
+('Microsoft', '2019-04-08T18:30:00Z', 0.8807)
+('Microsoft', '2019-04-09T09:45:00Z', 0.0)
+('Microsoft', '2019-04-18T21:38:00Z', -0.4767)
+('Microsoft', '2019-05-06T16:15:00Z', -0.2732)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:29:40
+-------------------------------------------
+('Nike', '2019-04-25T19:29:16Z', 0.7269)
+('Nike', '2019-04-09T09:00:00Z', 0.4767)
+('Nike', '2019-04-16T20:07:28Z', 0.8074)
+('Nike', '2019-05-03T14:48:44Z', 0.7701)
+('Nike', '2019-05-03T19:07:00Z', 0.5809)
+('Nike', '2019-04-11T15:48:05Z', 0.2023)
+('Nike', '2019-04-24T15:00:36Z', 0.9559)
+('Nike', '2019-04-15T14:21:34Z', 0.9382)
+('Nike', '2019-04-22T07:43:50Z', 0.7579)
+('Nike', '2019-05-02T04:18:54Z', 0.5106)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:29:50
+-------------------------------------------
+('Pfizer', '2019-04-24T10:00:13Z', 0.25)
+('Pfizer', '2019-04-10T10:30:58Z', -0.3818)
+('Pfizer', '2019-04-28T13:00:00Z', 0.8173)
+('Pfizer', '2019-04-22T13:53:00Z', 0.7717)
+('Pfizer', '2019-05-02T17:49:28Z', 0.0258)
+('Pfizer', '2019-04-14T11:00:00Z', 0.9081)
+('Pfizer', '2019-05-01T01:25:51Z', 0.7003)
+('Pfizer', '2019-05-05T11:30:00Z', 0.8621)
+('Pfizer', '2019-05-03T18:16:00Z', 0.6808)
+('Pfizer', '2019-04-30T14:27:00Z', -0.8316)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:30:00
+-------------------------------------------
+('Travelers Companies', '2019-04-24T19:04:41Z', 0.7783)
+('Travelers Companies', '2019-04-29T16:42:55Z', 0.8807)
+('Travelers Companies', '2019-04-09T06:59:53Z', 0.4588)
+('Travelers Companies', '2019-04-23T18:35:00Z', -0.5574)
+('Travelers Companies', '2019-04-11T15:00:00Z', 0.4455)
+('Travelers Companies', '2019-04-10T17:26:00Z', -0.4144)
+('Travelers Companies', '2019-04-17T06:24:08Z', -0.3612)
+('Travelers Companies', '2019-04-30T10:43:54Z', 0.9419)
+('Travelers Companies', '2019-05-01T11:15:20Z', 0.5859)
+('Travelers Companies', '2019-05-01T13:23:00Z', 0.7351)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:30:10
+-------------------------------------------
+('United Technologies', '2019-04-12T00:05:03Z', 0.5267)
+('United Technologies', '2019-04-24T17:30:00Z', -0.802)
+('United Technologies', '2019-05-02T16:31:52Z', 0.6369)
+('United Technologies', '2019-04-16T12:02:00Z', -0.9042)
+('United Technologies', '2019-04-12T19:56:43Z', 0.8481)
+('United Technologies', '2019-04-11T21:27:00Z', -0.6628)
+('United Technologies', '2019-04-24T12:00:00Z', 0.7184)
+('United Technologies', '2019-04-16T00:04:01Z', -0.9042)
+('United Technologies', '2019-05-01T22:35:40Z', 0.867)
+('United Technologies', '2019-05-05T16:01:19Z', -0.8658)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:30:20
+-------------------------------------------
+('UnitedHealth', '2019-04-16T17:13:45Z', 0.34)
+('UnitedHealth', '2019-04-16T19:25:11Z', 0.8271)
+('UnitedHealth', '2019-04-08T14:17:37Z', 0.9209)
+('UnitedHealth', '2019-04-17T21:15:00Z', -0.3182)
+('UnitedHealth', '2019-04-16T09:28:04Z', 0.7906)
+('UnitedHealth', '2019-04-17T00:27:03Z', 0.7351)
+('UnitedHealth', '2019-04-10T10:30:58Z', -0.3818)
+('UnitedHealth', '2019-04-16T21:35:00Z', 0.743)
+('UnitedHealth', '2019-04-25T14:43:00Z', 0.9118)
+('UnitedHealth', '2019-04-09T17:30:37Z', 0.8225)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:30:30
+-------------------------------------------
+('Visa', '2019-04-07T19:44:00Z', 0.4548)
+('Visa', '2019-04-10T23:01:26Z', 0.7003)
+('Visa', '2019-04-24T14:00:00Z', 0.8271)
+('Visa', '2019-04-24T15:39:11Z', 0.0)
+('Visa', '2019-04-08T18:44:22Z', 0.0)
+('Visa', '2019-04-23T13:48:00Z', 0.7351)
+('Visa', '2019-04-15T10:04:51Z', 0.814)
+('Visa', '2019-05-05T13:25:17Z', 0.3818)
+('Visa', '2019-05-02T18:11:39Z', 0.8654)
+('Visa', '2019-04-29T07:07:42Z', 0.8442)
+...
+
+-------------------------------------------
+Time: 2019-05-06 21:30:40
+-------------------------------------------
+('Wal-Mart', '2019-05-02T11:00:00Z', 0.0)
+('Wal-Mart', '2019-04-15T20:35:45Z', 0.0)
+('Wal-Mart', '2019-04-16T00:34:25Z', 0.8478)
+('Wal-Mart', '2019-04-22T17:24:26Z', 0.6908)
+('Wal-Mart', '2019-04-16T13:40:00Z', 0.6997)
+('Wal-Mart', '2019-04-17T20:43:11Z', 0.69)
+('Wal-Mart', '2019-04-23T15:04:23Z', 0.0)
+('Wal-Mart', '2019-04-26T12:30:00Z', 0.8074)
+('Wal-Mart', '2019-04-29T22:15:00Z', 0.2577)
+('Wal-Mart', '2019-05-02T08:30:00Z', 0.1779)
+...
+
