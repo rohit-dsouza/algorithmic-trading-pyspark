@@ -19,10 +19,10 @@ def main():
     sc.setLogLevel("WARN")
     ssc = StreamingContext(sc, 10)
     ssc.checkpoint("checkpoint")
-    stream(sc, ssc, 300)
+    stream(ssc, 300)
 
 
-def stream(sc, ssc, duration):
+def stream(ssc, duration):
 
     delim = "$$$$"
     kstream = KafkaUtils.createDirectStream(ssc, topics=['newsstream'],
@@ -37,7 +37,7 @@ def stream(sc, ssc, duration):
         str(w._1), str(w._2), str(w._2), str(w._3)))
     """
 
-    datardd.foreachRDD(lambda rdd : savetoDB(sc, rdd))
+    datardd.foreachRDD(lambda rdd : savetoDB(rdd))
 
     # Start the computation
     ssc.start()
@@ -45,7 +45,7 @@ def stream(sc, ssc, duration):
     ssc.awaitTermination()
     ssc.stop(stopGraceFully=True)
 
-def savetoDB(sc, rdd):
+def savetoDB(rdd):
     if not rdd.isEmpty():
         rdd.saveToMongoDB('mongodb://localhost:27017/stocksdb.stockscol')
 
