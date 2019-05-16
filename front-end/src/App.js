@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Budget from './Budget/Budget'
@@ -10,17 +10,45 @@ function getProfits() {
   return profit;
 };
 
-function App() {
-  return (
-    <div className="App">
-      <header className="AppTitle">
-        Stock Market Prediction through Sentiment Analysis 
+
+
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      profit: 0
+    }
+  }
+  render() {
+    return (
+      <div className="App">
+        <header className="AppTitle">
+          Stock Market Prediction through Sentiment Analysis
       </header>
-    <Budget />
-    <Profit value={getProfits()} />
-    <Portfolio />
-    </div>
-  );
+        <Budget functionHandle={this.fetchHelloWorld} />
+        <Profit value={this.state.profit} />
+        <Portfolio />
+      </div>
+    );
+  }
+
+  fetchHelloWorld = () => {
+    console.log("fetching python localhost");
+    fetch('http://127.0.0.1:5000/', {
+      method: 'GET',
+      mode: 'cors',
+      dataType: 'json'
+    })
+      .then(r => r.json())
+      .then(r => {
+        console.log(r.jack)
+        //let temp = JSON.parse(r)
+        this.setState({
+          profit: r.jack
+        })
+      })
+      .catch(err => console.log(err))
+  }
 }
 
 export default App;
